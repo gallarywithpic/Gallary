@@ -1,18 +1,22 @@
 {% extends 'download/base.html' %}
 
+
 {% block title%}
 Скачать арты и фото из игр бесплатно
 {% endblock %}
 
 {% block content %}
-
+<h1 align="center">
 <section class="jumbotron text-center">
     <div class="container">
       <h1>Скачать фото и арты</h1>
       <p class="lead text-muted">Вы можете бесплатно скачать любые фото и арты с нашего сайта совершенно бесплатно без смс и регистрации. </p>
         <p class="lead text-muted"> Что бы скачать вам нужно просто нажать на (Открыть в браузере) и нажать на правую клавишу миши и вибрать пункт (Сохранить как...)</p>
-      <p>
-      </p>
+
+<form action="{% url 'search_results' %}" method="get">
+  <input name="q" type="text" placeholder="Search...">
+</form>
+
     </div>
   </section>
         
@@ -22,7 +26,7 @@
       <div class="row">
         <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
-            <Img src="http://www.gamer.ru/system/attached_images/images/000/232/673/original/20100818-gamestar.jpg" Width="500" Height="300">
+            <Img src="http://www.gamer.ru/system/attached_images/images/000/232/673/original/20100818-gamestar.jpg" Width="700" Height="600">
             <div class="card-body">
               <p class="card-text">нежыть</p>
               <div class="d-flex justify-content-between align-items-center">
@@ -137,4 +141,5 @@
 
     </div>
 </div>
+</h1>
 {% endblock %}

@@ -4,7 +4,7 @@
     margin-bottom: 0;
     background-color: rgb(255, 255, 255);
   }
-  @media (min-width: 768px) {
+  @media (min-width: 120px) {
     .jumbotron {
       padding-top: 6rem;
       padding-bottom: 6rem;
@@ -16,7 +16,7 @@
   }
   
   .jumbotron h1 {
-    font-weight: 300;
+    font-weight: 100;
   }
   
   .jumbotron .container {

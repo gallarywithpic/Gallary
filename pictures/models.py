@@ -6,7 +6,7 @@ class Pictures(models.Model):
     culka = models.CharField(max_length=255)
  
     class Meta:
-      verbose_name_plural = "Pictures"
+      verbose_name_plural = "pictures"
  
     def __str__(self):
         return self.name
