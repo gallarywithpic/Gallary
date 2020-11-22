@@ -1,14 +1,19 @@
 
 <h1 align="center">Файлы которые вы искали</h1>
-<h1 align="center">
+<h2 align="center">
 <ul>
   {% for pictures in object_list %}
+  <style>
+   li {
+    list-style-type: none; /* Убираем маркеры */
+   }
+   </style>
     <li>
-      {{ pictures.name }} -------> <p><a download href="{{ pictures.culka }}"><button>Скачать файл</button></a></p>
+      {{ pictures.name }} <p><a download href="{{ pictures.culka }}"><button> Скачать файл </button></a></p>
     </li>
   {% endfor %}
 </ul>
-</h1>
+</h2>
 
 
 

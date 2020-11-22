@@ -50,19 +50,20 @@
  {% block content %}
   </section>
 {% endblock %}
-
-      <h4 class="text-white">Оставить отзыв (BETA)</h4>
-                    <ul class="list-unstyled">
-                <form name="form" action="mail.php" method="post" id="form_message">
-                        <h2>Написать отзыв</h2>
-                        <p> <div class="titles">Ваше имя*</div> <input class="input" name="name" type="text"/> </p>
-                 
-                        <p> <div class="titles">Электронная почта*</div> <input class="input" name="email" type="text"/> </p>
-                 
-                        <p> <div class="titles">Текст сообщения:</div><textarea name="message" cols="22" rows="5" /></textarea></p>
-                        <p><input id="submit" value="Отправить" type="submit" /></p>
-                    </form>
-</h4>
+<style>
+  .topNubex {
+	position: fixed;
+	right: 45px;
+	bottom: 45px;
+   }
+   img {
+    border: 0px solid #00a8e1;
+   }
+ 
+</style>
+<p class="float-right">
+    <a href="#" class="topNubex" ><img src="{% static 'download/css/up-arrow_icon-icons.com_69570.png' %}" height="60px"></a>
+</p>
   </body>
 </html>
 
